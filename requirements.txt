@@ -1,0 +1,13 @@
+gfpgan
+gradio
+insightface
+numpy
+onnx
+onnxruntime
+opencv-python
+Pillow
+protobuf
+psutil
+realesrgan
+tensorflow
+tqdm

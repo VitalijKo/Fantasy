@@ -1,4 +1,4 @@
-from vitswap import installer
+from fantasy import installer
 
 
 installer.run()

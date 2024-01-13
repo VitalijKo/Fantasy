@@ -1,4 +1,4 @@
-from vitswap import core
+from fantasy import core
 
 
 core.run()

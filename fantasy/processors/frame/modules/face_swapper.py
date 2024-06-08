@@ -12,7 +12,7 @@ from fantasy.vision import read_image, read_static_image, write_image
 FRAME_PROCESSOR = None
 THREAD_LOCK = threading.Lock()
 NAME = 'FANTASY.FRAME_PROCESSOR.FACE_SWAPPER'
-MODEL_URL = 'https://github.com/fantasy/fantasy-assets/releases/download/models/inswapper_128.onnx'
+MODEL_URL = 'https://github.com/facefusion/facefusion-assets/releases/download/models/inswapper_128.onnx'
 MODEL_PATH = resolve_relative_path('../.assets/models/inswapper_128.onnx')
 
 

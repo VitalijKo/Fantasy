@@ -11,7 +11,7 @@ FRAME_PROCESSOR = None
 THREAD_SEMAPHORE = threading.Semaphore()
 THREAD_LOCK = threading.Lock()
 NAME = 'FANTASY.FRAME_PROCESSOR.FACE_ENHANCER'
-MODEL_URL = 'https://github.com/fantasy/fantasy-assets/releases/download/models/GFPGANv1.4.pth'
+MODEL_URL = 'https://github.com/facefusion/facefusion-assets/releases/download/models/GFPGANv1.4.pth'
 MODEL_PATH = resolve_relative_path('../.assets/models/GFPGANv1.4.pth')
 
 

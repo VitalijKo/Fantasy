@@ -18,7 +18,7 @@ from fantasy.processors.frame.core import get_frame_processors_modules
 from fantasy.utilities import is_image, is_video, detect_fps, compress_image, merge_video, extract_frames, get_temp_frame_paths, restore_audio, create_temp, move_temp, clear_temp, normalize_output_path, list_module_names, decode_execution_providers, encode_execution_providers
 
 warnings.filterwarnings('ignore', category=FutureWarning, module='insightface')
-warnings.filterwarnings('ignore', category= UserWarning, module='torchvision')
+warnings.filterwarnings('ignore', category=UserWarning, module='torchvision')
 
 
 def parse_args():
@@ -123,7 +123,7 @@ def limit_resources():
 			resource.setrlimit(resource.RLIMIT_DATA, (memory, memory))
 
 
-def update_status(message, scope):
+def update_status(message, scope=__name__.upper()):
 	print(f'[{scope}] {message}')
 
 
@@ -167,7 +167,7 @@ def process_video():
 
 	update_status(wording.get('creating_temp'))
 	create_temp(fantasy.globals.target_path)
-	update_status(wording.get('extracting_frames_fps').format(fps = fps))
+	update_status(wording.get('extracting_frames_fps').format(fps=fps))
 	extract_frames(fantasy.globals.target_path, fps)
 
 	temp_frame_paths = get_temp_frame_paths(fantasy.globals.target_path)

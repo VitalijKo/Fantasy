@@ -13,7 +13,7 @@ FRAME_PROCESSOR = None
 THREAD_SEMAPHORE = threading.Semaphore()
 THREAD_LOCK = threading.Lock()
 NAME = 'FANTASY.FRAME_PROCESSOR.FRAME_ENHANCER'
-MODEL_URL = 'https://github.com/fantasy/fantasy-assets/releases/download/models/RealESRGAN_x4plus.pth'
+MODEL_URL = 'https://github.com/facefusion/facefusion-assets/releases/download/models/RealESRGAN_x4plus.pth'
 MODEL_PATH = resolve_relative_path('../.assets/models/RealESRGAN_x4plus.pth')
 
 

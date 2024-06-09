@@ -1,5 +1,5 @@
 gfpgan
-gradio
+gradio==3.48.0
 insightface
 numpy
 onnx

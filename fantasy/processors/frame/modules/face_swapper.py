@@ -114,7 +114,6 @@ def process_frames(source_path, temp_frame_paths, update_progress):
 		result_frame = process_frame(source_face, reference_face, temp_frame)
 
 		write_image(temp_frame_path, result_frame)
-
 		update_progress()
 
 

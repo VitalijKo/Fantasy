@@ -23,6 +23,7 @@ warnings.filterwarnings('ignore', category=UserWarning, module='torchvision')
 
 def parse_args():
 	signal.signal(signal.SIGINT, lambda signal_number, frame: destroy())
+
 	program = argparse.ArgumentParser(formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=120))
 	program.add_argument('-s', '--source', help=wording.get('source_help'), dest='source_path')
 	program.add_argument('-t', '--target', help=wording.get('target_help'), dest='target_path')
@@ -55,7 +56,6 @@ def parse_args():
 	program.add_argument('-v', '--version', version=metadata.get('name') + ' ' + metadata.get('version'), action='version')
 
 	args = program.parse_args()
-
 	fantasy.globals.source_path = args.source_path
 	fantasy.globals.target_path = args.target_path
 	fantasy.globals.output_path = normalize_output_path(fantasy.globals.source_path, fantasy.globals.target_path, args.output_path)

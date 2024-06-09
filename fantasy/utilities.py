@@ -127,6 +127,7 @@ def restore_audio(target_path, output_path):
 
 def get_temp_frame_paths(target_path):
 	temp_frames_pattern = get_temp_frames_pattern(target_path, '*')
+
 	return sorted(glob.glob(temp_frames_pattern))
 
 
